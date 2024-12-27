@@ -18,3 +18,10 @@ aclocal.m4
 *.o
 *~
 *.bak
+
+
+dieharder-config
+dieharder/dieharder
+dieharder.spec
+dieharder.html
+dieharder_version.h
