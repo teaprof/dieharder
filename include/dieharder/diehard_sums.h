@@ -5,12 +5,9 @@
 /*
  * function prototype
  */
-int diehard_sums(Test **test,int irun);
+int diehard_sums(Test** test, int irun);
 
-static Dtest diehard_sums_dtest __attribute__((unused)) = {
-  "Diehard Sums Test",
-  "diehard_sums",
-  "\
+static Dtest diehard_sums_dtest __attribute__((unused)) = {"Diehard Sums Test", "diehard_sums", "\
 #==================================================================\n\
 #                  Diehard Sums Test\n\
 # Integers are floated to get a sequence U(1),U(2),... of uni-  \n\
@@ -34,11 +31,4 @@ static Dtest diehard_sums_dtest __attribute__((unused)) = {
 # exactly the same thing, but scalably and reliably without the\n\
 # complication of overlapping samples and covariance.  Use it\n\
 # instead.\n\
-#==================================================================\n",
-  100,
-  100,
-  1,
-  diehard_sums,
-  0
-};
-
+#==================================================================\n", 100, 100, 1, diehard_sums, 0};

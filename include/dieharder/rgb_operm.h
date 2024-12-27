@@ -5,12 +5,11 @@
 /*
  * function prototype
  */
-int rgb_operm(Test **test,int irun);
+int rgb_operm(Test** test, int irun);
 
-static Dtest rgb_operm_dtest __attribute__((unused)) = {
-  "RGB Overlapping Permuations Test",
-  "rgb_operm",
-  "\n\
+static Dtest rgb_operm_dtest __attribute__((unused)) = {"RGB Overlapping Permuations Test",
+                                                        "rgb_operm",
+                                                        "\n\
 #========================================================================\n\
 #                 RGB Overlapping Permutations Test\n\
 # Forms both the exact (expected) covariance matrix for overlapping\n\
@@ -22,12 +21,11 @@ static Dtest rgb_operm_dtest __attribute__((unused)) = {
 # number of numbers in the overlapping permutation window) to be varied\n\
 # from 2 to perhaps 8.\n\
 #\n",
-  100,     /* Default psamples */
-  100000,  /* Default tsamples */
-  1,       /* We magically make all the bit tests return a single histogram */
-  rgb_operm,
-  0
-};
+                                                        100,    /* Default psamples */
+                                                        100000, /* Default tsamples */
+                                                        1, /* We magically make all the bit tests return a single histogram */
+                                                        rgb_operm,
+                                                        0};
 
 /*
  * Global variables.

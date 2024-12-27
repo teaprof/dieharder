@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int dab_monobit2(Test **test,int irun);
+int dab_monobit2(Test** test, int irun);
 
-static Dtest dab_monobit2_dtest __attribute__((unused)) = {
-  "DAB Monobit 2 Test",
-  "dab_monobit2",
-  "\
+static Dtest dab_monobit2_dtest
+    __attribute__((unused)) = {"DAB Monobit 2 Test", "dab_monobit2", "\
 #==================================================================\n\
 #                     DAB Monobit 2 Test\n\
 # Block-monobit test.\n\
@@ -18,11 +16,4 @@ static Dtest dab_monobit2_dtest __attribute__((unused)) = {
 # sizes.  In particular, try all block sizes of 2^k words, where\n\
 # k={0..n}.  The value of n is calculated from the word size of the\n\
 # generator and the sample size used, and is shown as ntuple.\n\
-#==================================================================\n",
-  1,
-  65000000,
-  1,
-  dab_monobit2,
-  0
-};
-
+#==================================================================\n", 1, 65000000, 1, dab_monobit2, 0};

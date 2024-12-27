@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_2dsphere(Test **test,int irun);
+int diehard_2dsphere(Test** test, int irun);
 
 static Dtest diehard_2dsphere_dtest __attribute__((unused)) = {
-  "Diehard Minimum Distance (2d Circle) Test",
-  "diehard_2dsphere",
-  "\
+    "Diehard Minimum Distance (2d Circle) Test", "diehard_2dsphere", "\
 #==================================================================\n\
 #         Diehard Minimum Distance (2d Circle) Test \n\
 # It does this 100 times::   choose n=8000 random points in a   \n\
@@ -27,11 +25,4 @@ static Dtest diehard_2dsphere_dtest __attribute__((unused)) = {
 # This test uses a fixed number of samples -- tsamples is ignored.\n\
 # It also uses the default value of 100 psamples in the final\n\
 # KS test, for once agreeing precisely with Diehard.\n\
-#==================================================================\n",
-  100,
-  8000,
-  1,
-  diehard_2dsphere,
-  0
-};
-
+#==================================================================\n", 100, 8000, 1, diehard_2dsphere, 0};

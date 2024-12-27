@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_squeeze(Test **test,int irun);
+int diehard_squeeze(Test** test, int irun);
 
-static Dtest diehard_squeeze_dtest __attribute__((unused)) = {
-  "Diehard Squeeze Test",
-  "diehard_squeeze",
-  "\
+static Dtest diehard_squeeze_dtest
+    __attribute__((unused)) = {"Diehard Squeeze Test", "diehard_squeeze", "\
 #==================================================================\n\
 #                  Diehard Squeeze Test.\n\
 #  Random integers are floated to get uniforms on [0,1). Start- \n\
@@ -20,11 +18,4 @@ static Dtest diehard_squeeze_dtest __attribute__((unused)) = {
 #  the file being tested.  Such j's are found 100,000 times,    \n\
 #  then counts for the number of times j was <=6,7,...,47,>=48  \n\
 #  are used to provide a chi-square test for cell frequencies.  \n\
-#==================================================================\n",
-  100,
-  100000,
-  1,
-  diehard_squeeze,
-  0
-};
-
+#==================================================================\n", 100, 100000, 1, diehard_squeeze, 0};

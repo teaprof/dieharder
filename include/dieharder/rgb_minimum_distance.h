@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int rgb_minimum_distance(Test **test,int irun);
+int rgb_minimum_distance(Test** test, int irun);
 
 static Dtest rgb_minimum_distance_dtest __attribute__((unused)) = {
-  "RGB Generalized Minimum Distance Test",
-  "rgb_minimum_distance",
-  "#\n\
+    "RGB Generalized Minimum Distance Test", "rgb_minimum_distance", "#\n\
 #            THE GENERALIZED MINIMUM DISTANCE TEST\n\
 #\n\
 # This is the generalized minimum distance test, based on the paper of M.\n\
@@ -36,11 +34,4 @@ static Dtest rgb_minimum_distance_dtest __attribute__((unused)) = {
 # as thoroughly as one likes subject to the generous constraints\n\
 # associated with the eventual need for still higher order corrections\n\
 # as n and p are made large enough.\n\
-#\n",
-  1000,
-  10000,
-  1,
-  rgb_minimum_distance,
-  0
-};
-
+#\n", 1000, 10000, 1, rgb_minimum_distance, 0};

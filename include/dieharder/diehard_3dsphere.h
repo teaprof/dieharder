@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_3dsphere(Test **test,int irun);
+int diehard_3dsphere(Test** test, int irun);
 
 static Dtest diehard_3dsphere_dtest __attribute__((unused)) = {
-  "Diehard 3d Sphere (Minimum Distance) Test",
-  "diehard_3dsphere",
-  "\
+    "Diehard 3d Sphere (Minimum Distance) Test", "diehard_3dsphere", "\
 #==================================================================\n\
 #          Diehard 3d Sphere (Minimum Distance) Test\n\
 # Choose  4000 random points in a cube of edge 1000.  At each   \n\
@@ -25,11 +23,4 @@ static Dtest diehard_3dsphere_dtest __attribute__((unused)) = {
 #\n\
 # This test ignores tsamples, and runs the usual default 100\n\
 # psamples to use in the final KS test.\n\
-#==================================================================\n",
-  100,
-  4000,
-  1,
-  diehard_3dsphere,
-  0
-};
-
+#==================================================================\n", 100, 4000, 1, diehard_3dsphere, 0};

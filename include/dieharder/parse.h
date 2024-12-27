@@ -8,21 +8,20 @@
  *========================================================================
  */
 
-
 /*
  * This is a somewhat sloppy way to do this, I suppose, but it will work
  */
 #define PBUF 128
-#define PK   1024
+#define PK 1024
 
- /*
-  * Shared space
-  */
- extern char splitbuf[PK][PBUF];
+/*
+ * Shared space
+ */
+extern char splitbuf[PK][PBUF];
 
- /*
-  * parse.c prototypes
-  */
- int split(char *inbuffer);
- int parse(char *inbuffer,char **outfields,int maxfields,int maxfieldlength);
- void chop(char *buf);
+/*
+ * parse.c prototypes
+ */
+int split(char* inbuffer);
+int parse(char* inbuffer, char** outfields, int maxfields, int maxfieldlength);
+void chop(char* buf);

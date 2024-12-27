@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int dab_birthdays1(Test **test, int irun);
+int dab_birthdays1(Test** test, int irun);
 
-static Dtest dab_birthdays1_dtest __attribute__((unused)) = {
-  "DAB Diehard Birthdays Test",
-  "dab_birthdays1",
-  "\n\
+static Dtest dab_birthdays1_dtest
+    __attribute__((unused)) = {"DAB Diehard Birthdays Test", "dab_birthdays1", "\n\
 #==================================================================\n\
 #                Diehard \"Birthdays\" test (modified).\n\
 # This is a version of the Diehard Birthdays test, modified from the\n\
@@ -45,13 +43,7 @@ static Dtest dab_birthdays1_dtest __attribute__((unused)) = {
 # producing the target by simulation instead of relying on the \n\
 # Poisson approximation will probably be necessary.\n\
 # \n\
-#==================================================================\n",
-  1,
-  2000,
-  1,
-  dab_birthdays1,
-  0
-};
+#==================================================================\n", 1, 2000, 1, dab_birthdays1, 0};
 
 /*
  * Global variables

@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_parking_lot(Test **test,int irun);
+int diehard_parking_lot(Test** test, int irun);
 
-static Dtest diehard_parking_lot_dtest __attribute__((unused)) = {
-  "Diehard Parking Lot Test",
-  "diehard_parking_lot",
-  "\
+static Dtest diehard_parking_lot_dtest
+    __attribute__((unused)) = {"Diehard Parking Lot Test", "diehard_parking_lot", "\
 #==================================================================\n\
 #             Diehard Parking Lot Test (modified).\n\
 # This tests the distribution of attempts to randomly park a\n\
@@ -24,11 +22,4 @@ static Dtest diehard_parking_lot_dtest __attribute__((unused)) = {
 # to normally distributed.  Thus (k-3523)/21.9 is a standard\n\
 # normal variable, which converted to a uniform p-value, provides\n\
 # input to a KS test with a default 100 samples.\n\
-#==================================================================\n",
-  100,
-  0,
-  1,
-  diehard_parking_lot,
-  0
-};
-
+#==================================================================\n", 100, 0, 1, diehard_parking_lot, 0};

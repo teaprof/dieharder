@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_count_1s_byte(Test **test,int irun);
+int diehard_count_1s_byte(Test** test, int irun);
 
 static Dtest diehard_count_1s_byte_dtest __attribute__((unused)) = {
-  "Diehard Count the 1s Test (byte)",
-  "diehard_count_1s_byte",
-  "\
+    "Diehard Count the 1s Test (byte)", "diehard_count_1s_byte", "\
 #==================================================================\n\
 #         Diehard Count the 1s Test (byte) (modified).\n\
 #     This is the COUNT-THE-1's TEST for specific bytes.        \n\
@@ -39,11 +37,4 @@ static Dtest diehard_count_1s_byte_dtest __attribute__((unused)) = {
 # tsamples and psamples can be freely varied, but you'll likely \n\
 # need tsamples >> 100,000 to have enough to get a reliable kstest \n\
 # result. \n\
-#==================================================================\n",
-  100,
-  256000,
-  1,
-  diehard_count_1s_byte,
-  0
-};
-
+#==================================================================\n", 100, 256000, 1, diehard_count_1s_byte, 0};

@@ -2,9 +2,7 @@
  * Hopefully this is a valid default initialization of the template test.
  */
 
-static Dtest marsaglia_tsang_gorilla_data = {
-  "Marsaglia and Tsang Gorilla Test",
-  "\n\
+static Dtest marsaglia_tsang_gorilla_data = {"Marsaglia and Tsang Gorilla Test", "\n\
 #==================================================================\n\
 #               Marsaglia and Tsang Gorilla Test\n\
 #\n\
@@ -13,8 +11,6 @@ static Dtest marsaglia_tsang_gorilla_data = {
 # Note that the second revision number will bump by one when this\n\
 # test is completed -- check back later!\n\
 #==================================================================\n",
-  100,
-  100000
-};
+                                             100, 100000};
 
-static Dtest *dtest = &marsaglia_tsang_gorilla_data;
+static Dtest* dtest = &marsaglia_tsang_gorilla_data;

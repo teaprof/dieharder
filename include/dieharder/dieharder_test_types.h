@@ -6,7 +6,7 @@
  * ========================================================================
  */
 
-/* 
+/*
  * ========================================================================
  * This program initializes a permanent internal vector of pointers to all
  * the tests known to dieharder that generate a pvalue or vector of
@@ -27,28 +27,30 @@
  * ========================================================================
  */
 
- /*
-  * test global vectors and variables for tests.
-  */
+/*
+ * test global vectors and variables for tests.
+ */
 #define MAXTESTS 1000
 
+void dieharder_test_types();
 
+extern Dtest* dh_test_types[MAXTESTS];
 
- void dieharder_test_types();
+#define ADD_TEST(t)                 \
+    {                               \
+        if (i == MAXTESTS) abort(); \
+        dh_test_types[i] = (t);     \
+        i++;                        \
+    };
 
-extern Dtest *dh_test_types[MAXTESTS];
+/*
+ * Global shared counters for the new types of rngs in the organization
+ * defined above.
+ */
+extern unsigned int dh_num_diehard_tests; /* diehard tests available in dieharder */
+extern unsigned int dh_num_sts_tests;     /* STS tests available in dieharder */
+extern unsigned int dh_num_other_tests;   /* other tests available in dieharder */
+extern unsigned int dh_num_user_tests;    /* user tests added in ui segment */
+extern unsigned int dh_num_tests;         /* total tests available in dieharder */
 
-#define ADD_TEST(t) {if (i==MAXTESTS) abort(); dh_test_types[i] = (t); i++; };
-
- /*
-  * Global shared counters for the new types of rngs in the organization
-  * defined above.
-  */
-extern unsigned int dh_num_diehard_tests;  /* diehard tests available in dieharder */
-extern unsigned int dh_num_sts_tests;      /* STS tests available in dieharder */
-extern unsigned int dh_num_other_tests;    /* other tests available in dieharder */
-extern unsigned int dh_num_user_tests;     /* user tests added in ui segment */
-extern unsigned int dh_num_tests;          /* total tests available in dieharder */
-
-
-extern Dtest *dh_test;             /* global pointer to the current test */
+extern Dtest* dh_test; /* global pointer to the current test */

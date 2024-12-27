@@ -5,12 +5,9 @@
 /*
  * function prototype
  */
-int dab_opso2(Test **test, int irun);
+int dab_opso2(Test** test, int irun);
 
-static Dtest dab_opso2_dtest __attribute__((unused)) = {
-  "DAB OPSO2",
-  "dab_opso2",
-  "\
+static Dtest dab_opso2_dtest __attribute__((unused)) = {"DAB OPSO2", "dab_opso2", "\
 #==================================================================\n\
 #           DAB OPSO2 Test\n\
 #  This test is misnamed.  It is an evolution of the OPSO test from\n\
@@ -48,11 +45,4 @@ static Dtest dab_opso2_dtest __attribute__((unused)) = {
 # consecutive bits. It then restarts the file for the next de-  \n\
 # signated 10 bits, and so on.                                  \n\
 # \n\
-#==================================================================\n",
-  1,
-  67108864,
-  2,
-  dab_opso2,
-  0
-};
-
+#==================================================================\n", 1, 67108864, 2, dab_opso2, 0};

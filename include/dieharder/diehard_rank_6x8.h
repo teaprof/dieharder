@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_rank_6x8(Test **test,int irun);
+int diehard_rank_6x8(Test** test, int irun);
 
-static Dtest diehard_rank_6x8_dtest __attribute__((unused)) = {
-  "Diehard 6x8 Binary Rank Test",
-  "diehard_rank_6x8",
-  "\n\
+static Dtest diehard_rank_6x8_dtest
+    __attribute__((unused)) = {"Diehard 6x8 Binary Rank Test", "diehard_rank_6x8", "\n\
 #==================================================================\n\
 #              Diehard 6x8 Binary Rank Test\n\
 # This is the BINARY RANK TEST for 6x8 matrices.  From each of\n\
@@ -24,11 +22,4 @@ static Dtest diehard_rank_6x8_dtest __attribute__((unused)) = {
 #\n\
 # As always, the test is repeated and a KS test applied to the\n\
 # resulting p-values to verify that they are approximately uniform.\n\
-#==================================================================\n",
-  100,
-  100000,
-  1,
-  diehard_rank_6x8,
-  0
-};
-
+#==================================================================\n", 100, 100000, 1, diehard_rank_6x8, 0};

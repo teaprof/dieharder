@@ -4,7 +4,7 @@
  * $Id: copyright.h 222 2006-08-17 04:54:59Z rgb $
  *
  * Copyright (c) 2003 by Robert G. Brown, rgb@phy.duke.edu
- *         GPL version 2b (b for beverage) granted as given 
+ *         GPL version 2b (b for beverage) granted as given
  *         in the file COPYING in this distribution.
  *
  * THE COPYRIGHT HOLDERS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,

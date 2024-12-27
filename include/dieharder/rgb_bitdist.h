@@ -5,12 +5,11 @@
 /*
  * function prototype
  */
-int rgb_bitdist(Test **test,int irun);
+int rgb_bitdist(Test** test, int irun);
 
-static Dtest rgb_bitdist_dtest __attribute__((unused)) = {
-  "RGB Bit Distribution Test",
-  "rgb_bitdist",
-  "\n\
+static Dtest rgb_bitdist_dtest __attribute__((unused)) = {"RGB Bit Distribution Test",
+                                                          "rgb_bitdist",
+                                                          "\n\
 #========================================================================\n\
 #                 RGB Bit Distribution Test\n\
 # Accumulates the frequencies of all n-tuples of bits in a list\n\
@@ -28,10 +27,8 @@ static Dtest rgb_bitdist_dtest __attribute__((unused)) = {
 # get quite large by e.g. ntuple = 20 -- use caution when sampling the\n\
 # distribution of very large ntuples.\n\
 #\n",
-  100,     /* Default psamples */
-  100000,  /* Default tsamples */
-  1,       /* We magically make all the bit tests return a single histogram */
-  rgb_bitdist,
-  0
-};
-
+                                                          100,    /* Default psamples */
+                                                          100000, /* Default tsamples */
+                                                          1, /* We magically make all the bit tests return a single histogram */
+                                                          rgb_bitdist,
+                                                          0};

@@ -5,12 +5,11 @@
 /*
  * function prototype
  */
-int diehard_craps(Test **test,int irun);
+int diehard_craps(Test** test, int irun);
 
-static Dtest diehard_craps_dtest __attribute__((unused)) = {
-  "Diehard Craps Test",
-  "diehard_craps",
-  "\
+static Dtest diehard_craps_dtest __attribute__((unused)) = {"Diehard Craps Test",
+                                                            "diehard_craps",
+                                                            "\
 #==================================================================\n\
 #                   Diehard Craps Test\n\
 #  This is the CRAPS TEST. It plays 200,000 games of craps, finds  \n\
@@ -24,10 +23,8 @@ static Dtest diehard_craps_dtest __attribute__((unused)) = {
 #  the throw of a die, by floating to [0,1), multiplying by 6      \n\
 #  and taking 1 plus the integer part of the result.               \n\
 #==================================================================\n",
-  100,     /* Default psamples */
-  200000,  /* Default tsamples */
-  2,       /* This test returns two statistics */
-  diehard_craps,
-  0
-};
-
+                                                            100,    /* Default psamples */
+                                                            200000, /* Default tsamples */
+                                                            2,      /* This test returns two statistics */
+                                                            diehard_craps,
+                                                            0};

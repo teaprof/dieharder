@@ -13,20 +13,18 @@
  * what to do with it.
  */
 typedef struct {
-  unsigned int nkps;           /* Number of test statistics created per run */
-  unsigned int tsamples;       /* Number of samples per test (if applicable) */
-  unsigned int psamples;       /* Number of test runs per final KS p-value */
-  unsigned int ntuple;         /* Number of bits in ntuples being tested */
-  double *pvalues;     /* Vector of length psamples to hold test p-values */
-  char *pvlabel;       /* Vector of length LINE to hold labels per p-value */
-  double ks_pvalue;    /* Final KS p-value from run of many tests */
-  double x;            /* Extra variable passed on command line */
-  double y;            /* Extra variable passed on command line */
-  double z;            /* Extra variable passed on command line */
+    unsigned int nkps;     /* Number of test statistics created per run */
+    unsigned int tsamples; /* Number of samples per test (if applicable) */
+    unsigned int psamples; /* Number of test runs per final KS p-value */
+    unsigned int ntuple;   /* Number of bits in ntuples being tested */
+    double* pvalues;       /* Vector of length psamples to hold test p-values */
+    char* pvlabel;         /* Vector of length LINE to hold labels per p-value */
+    double ks_pvalue;      /* Final KS p-value from run of many tests */
+    double x;              /* Extra variable passed on command line */
+    double y;              /* Extra variable passed on command line */
+    double z;              /* Extra variable passed on command line */
 } Test;
 
-
-Test **create_test(Dtest *dtest, unsigned int tsamples, unsigned int psamples);
-void destroy_test(Dtest *dtest, Test **test);
-void std_test(Dtest *dtest, Test **test);
-
+Test** create_test(Dtest* dtest, unsigned int tsamples, unsigned int psamples);
+void destroy_test(Dtest* dtest, Test** test);
+void std_test(Dtest* dtest, Test** test);

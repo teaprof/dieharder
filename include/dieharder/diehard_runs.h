@@ -5,12 +5,11 @@
 /*
  * function prototype
  */
-int diehard_runs(Test **test,int irun);
+int diehard_runs(Test** test, int irun);
 
-static Dtest diehard_runs_dtest __attribute__((unused)) = {
-  "Diehard Runs Test",
-  "diehard_runs",
-  "\
+static Dtest diehard_runs_dtest __attribute__((unused)) = {"Diehard Runs Test",
+                                                           "diehard_runs",
+                                                           "\
 #==================================================================\n\
 #                    Diehard Runs Test\n\
 #  This is the RUNS test.  It counts runs up, and runs down, \n\
@@ -29,10 +28,8 @@ static Dtest diehard_runs_dtest __attribute__((unused)) = {
 # default, and 100 p-values thus generated are used in a final\n\
 # KS test.\n\
 #==================================================================\n",
-  100,     /* Default psamples */
-  100000,  /* Default tsamples */
-  2,       /* runs returns two pvalues, not just one */
-  diehard_runs,
-  0
-};
-
+                                                           100,    /* Default psamples */
+                                                           100000, /* Default tsamples */
+                                                           2,      /* runs returns two pvalues, not just one */
+                                                           diehard_runs,
+                                                           0};

@@ -5,12 +5,9 @@
 /*
  * function prototype
  */
-int sts_runs(Test **test,int irun);
+int sts_runs(Test** test, int irun);
 
-static Dtest sts_runs_dtest __attribute__((unused)) = {
-  "STS Runs Test",
-  "sts_runs",
-  "\
+static Dtest sts_runs_dtest __attribute__((unused)) = {"STS Runs Test", "sts_runs", "\
 #==================================================================\n\
 #                       STS Runs Test\n\
 # Counts the total number of 0 runs + total number of 1 runs across\n\
@@ -22,12 +19,4 @@ static Dtest sts_runs_dtest __attribute__((unused)) = {
 # rgb_bitdist() test for 2-tuples, which looks beyond the means to the\n\
 # moments, testing an entire histogram  of 00, 01, 10, and 11 counts\n\
 # to see if it is binomially distributed with p = 0.25.\n\
-#==================================================================\n",
-  100,
-  100000,
-  1,
-  sts_runs,
-  0
-};
-
-
+#==================================================================\n", 100, 100000, 1, sts_runs, 0};

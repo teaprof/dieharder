@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_oqso(Test **test, int irun);
+int diehard_oqso(Test** test, int irun);
 
-static Dtest diehard_oqso_dtest __attribute__((unused)) = {
-  "Diehard OQSO Test",
-  "diehard_oqso",
-  "\
+static Dtest diehard_oqso_dtest
+    __attribute__((unused)) = {"Diehard OQSO Test", "diehard_oqso", "\
 #==================================================================\n\
 #   Diehard Overlapping Quadruples Sparce Occupancy (OQSO) Test\n\
 #\n\
@@ -24,11 +22,4 @@ static Dtest diehard_oqso_dtest __attribute__((unused)) = {
 #  extensive simulation.                                         \n\
 # \n\
 #  Note 2^21 = 2097152, tsamples cannot be varied.\n\
-#==================================================================\n",
-  100,
-  2097152,
-  1,
-  diehard_oqso,
-  0
-};
-
+#==================================================================\n", 100, 2097152, 1, diehard_oqso, 0};

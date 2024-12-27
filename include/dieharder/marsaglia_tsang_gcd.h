@@ -5,12 +5,11 @@
 /*
  * function prototype
  */
-int marsaglia_tsang_gcd(Test **test,int irun);
+int marsaglia_tsang_gcd(Test** test, int irun);
 
-static Dtest marsaglia_tsang_gcd_dtest __attribute__((unused)) = {
-  "Marsaglia and Tsang GCD Test",
-  "marsaglia_tsang_gcd",
-  "\
+static Dtest marsaglia_tsang_gcd_dtest __attribute__((unused)) = {"Marsaglia and Tsang GCD Test",
+                                                                  "marsaglia_tsang_gcd",
+                                                                  "\
 #==================================================================\n\
 #                     Marsaglia and Tsang GCD Test\n\
 #\n\
@@ -34,10 +33,8 @@ static Dtest marsaglia_tsang_gcd_dtest __attribute__((unused)) = {
 # and 100 (default) p-values of each are accumulated and subjected to\n\
 # final KS tests and displayed in a histogram.\n\
 #==================================================================\n",
-  100,
-  10000000,
-  2,       /* This test returns two statistics */
-  marsaglia_tsang_gcd,
-  0
-};
-
+                                                                  100,
+                                                                  10000000,
+                                                                  2, /* This test returns two statistics */
+                                                                  marsaglia_tsang_gcd,
+                                                                  0};

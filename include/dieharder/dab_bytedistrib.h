@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int dab_bytedistrib(Test **test, int irun);
+int dab_bytedistrib(Test** test, int irun);
 
-static Dtest dab_bytedistrib_dtest __attribute__((unused)) = {
-  "Byte Distribution",
-  "dab_bytedistrib",
-  "\
+static Dtest dab_bytedistrib_dtest
+    __attribute__((unused)) = {"Byte Distribution", "dab_bytedistrib", "\
 #==================================================================\n\
         		DAB Byte Distribution Test\n\
 #\n\
@@ -28,11 +26,4 @@ static Dtest dab_bytedistrib_dtest __attribute__((unused)) = {
 # I envisioned this test as using a small number of samples and large\n\
 # number of separate tests. Experiments so far show that keeping -p 1\n\
 # and increasing -t performs best.\n\
-#==================================================================\n",
-  1,
-  51200000,
-  1,
-  dab_bytedistrib,
-  0
-};
-
+#==================================================================\n", 1, 51200000, 1, dab_bytedistrib, 0};

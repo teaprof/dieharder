@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int dab_filltree2(Test **test, int irun);
+int dab_filltree2(Test** test, int irun);
 
-static Dtest dab_filltree2_dtest __attribute__((unused)) = {
-  "DAB Fill Tree 2 Test",
-  "dab_filltree2",
-  "\
+static Dtest dab_filltree2_dtest
+    __attribute__((unused)) = {"DAB Fill Tree 2 Test", "dab_filltree2", "\
 #==========================================================\n\
 #        DAB Fill Tree 2 Test\n\
 # Bit version of Fill Tree test.\n\
@@ -34,11 +32,4 @@ static Dtest dab_filltree2_dtest __attribute__((unused)) = {
 #\n\
 # Because of the target data for the first p-value,\n\
 # ntuple must be kept at the default (128).\n\
-#==========================================================\n",
-  1,
-  5000000,
-  2,
-  dab_filltree2,
-  0
-};
-
+#==========================================================\n", 1, 5000000, 2, dab_filltree2, 0};

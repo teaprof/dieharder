@@ -5,12 +5,9 @@
 /*
  * function prototype
  */
-int dab_dct(Test **test, int irun);
+int dab_dct(Test** test, int irun);
 
-static Dtest dab_dct_dtest __attribute__((unused)) = {
-  "DAB DCT",
-  "dab_dct",
-  "\
+static Dtest dab_dct_dtest __attribute__((unused)) = {"DAB DCT", "dab_dct", "\
 #========================================================================\n\
 #                    DCT (Frequency Analysis) Test\n\
 #========================================================================\n\
@@ -41,11 +38,4 @@ static Dtest dab_dct_dtest __attribute__((unused)) = {
 #\n\
 # [1] The samples are taken as unsigned integers, and the DC coefficient\n\
 # is adjusted to compensate for this.\n\
-#/\n",
-  1,
-  50000,
-  1,
-  dab_dct,
-  0
-};
-
+#/\n", 1, 50000, 1, dab_dct, 0};

@@ -2,12 +2,9 @@
  * Hopefully this is a valid default initialization of the template test.
  */
 
-int rgb_lmn(Dtest **dtest,Test **test);
+int rgb_lmn(Dtest** dtest, Test** test);
 
-static Dtest lmn_test = {
-  "RGB lmn Test",
-  "rgb_lmn_test",
-  "\n\
+static Dtest lmn_test = {"RGB lmn Test", "rgb_lmn_test", "\n\
 #==================================================================\n\
 #                      RGB lmn Test\n\
 #\n\
@@ -15,11 +12,4 @@ static Dtest lmn_test = {
 # or subsumes sts_series and rgb_bitdist.  It should prove to be\n\
 # a very powerful way of revealing bitlevel correlations and indeed\n\
 # should systematically subsume many other tests as well.\n\
-#==================================================================\n",
-  100,
-  100000
-  0,
-  rgb_lmn,
-  0
-};
-
+#==================================================================\n", 100, 100000 0, rgb_lmn, 0};

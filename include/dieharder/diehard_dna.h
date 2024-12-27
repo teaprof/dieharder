@@ -5,12 +5,9 @@
 /*
  * function prototype
  */
-int diehard_dna(Test **test,int irun);
+int diehard_dna(Test** test, int irun);
 
-static Dtest diehard_dna_dtest __attribute__((unused)) = {
-  "Diehard DNA Test",
-  "diehard_dna",
-  "\
+static Dtest diehard_dna_dtest __attribute__((unused)) = {"Diehard DNA Test", "diehard_dna", "\
 #==================================================================\n\
 #                    Diehard DNA Test.\n\
 # \n\
@@ -27,11 +24,4 @@ static Dtest diehard_dna_dtest __attribute__((unused)) = {
 # Note 2^21 = 2097152\n\
 # Note also that we don't bother with overlapping keystrokes \n\
 # (and sample more rands -- rands are now cheap). \n\
-#==================================================================\n",
-  100,
-  2097152,
-  1,
-  diehard_dna,
-  0
-};
-
+#==================================================================\n", 100, 2097152, 1, diehard_dna, 0};

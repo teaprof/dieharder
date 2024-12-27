@@ -7,16 +7,14 @@
  * function prototype
  */
 typedef struct {
-  unsigned int nbits;
-  unsigned int and_mask;
-  unsigned int cumulative_mask;
+    unsigned int nbits;
+    unsigned int and_mask;
+    unsigned int cumulative_mask;
 } Rgb_Persist;
-int rgb_persist(Test **test, Rgb_Persist *persist);
+int rgb_persist(Test** test, Rgb_Persist* persist);
 
-static Dtest rgb_persist_dtest __attribute__((unused)) = {
-  "RGB Bit Persistence Test",
-  "rgb_persist", 
-  "\n\
+static Dtest rgb_persist_dtest
+    __attribute__((unused)) = {"RGB Bit Persistence Test", "rgb_persist", "\n\
 #========================================================================\n\
 #                   RGB Bit Persistence Test\n\
 # This test generates 256 sequential samples of an random unsigned\n\
@@ -34,12 +32,6 @@ static Dtest rgb_persist_dtest __attribute__((unused)) = {
 # entire test is repeated with the rng reseeded to generate a mask\n\
 # and the extracted mask cumulated to show all the possible bit\n\
 # positions that might be repeated for different seeds.\n\
-",
-  1,
-  256,
-  1,
-  rgb_persist,
-  0
-};
+", 1, 256, 1, rgb_persist, 0};
 
-extern unsigned int *rgb_persist_rand_uint;
+extern unsigned int* rgb_persist_rand_uint;

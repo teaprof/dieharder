@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int sts_serial(Test **test,int irun);
+int sts_serial(Test** test, int irun);
 
-static Dtest sts_serial_dtest __attribute__((unused)) = {
-  "STS Serial Test (Generalized)",
-  "sts_serial",
-  "\
+static Dtest sts_serial_dtest
+    __attribute__((unused)) = {"STS Serial Test (Generalized)", "sts_serial", "\
 #========================================================================\n\
 #                         STS Serial Test\n\
 # Accumulates the frequencies of overlapping n-tuples of bits drawn\n\
@@ -55,11 +53,8 @@ static Dtest sts_serial_dtest __attribute__((unused)) = {
 # not, so we really only need to check n=24 bit results to get all\n\
 # the rest for free, so to speak.\n\
 #\n",
-  100,     /* Default psamples */
-  100000,  /* Default tsamples */
-  /* 44,    * We need to be ABLE to make 1 pvalue from m=1,2, 2 from m=[3,24] */
-  30,      /* We need to be ABLE to make 1 pvalue from m=1,2, 2 from m=[3,16] */
-  sts_serial,
-  0
-};
-
+                               100,    /* Default psamples */
+                               100000, /* Default tsamples */
+                               /* 44,    * We need to be ABLE to make 1 pvalue from m=1,2, 2 from m=[3,24] */
+                               30, /* We need to be ABLE to make 1 pvalue from m=1,2, 2 from m=[3,16] */
+                               sts_serial, 0};

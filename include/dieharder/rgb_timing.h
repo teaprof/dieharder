@@ -8,15 +8,14 @@
  * function prototype
  */
 typedef struct {
- double avg_time_nsec;
- double rands_per_sec;
+    double avg_time_nsec;
+    double rands_per_sec;
 } Rgb_Timing;
-int rgb_timing(Test **test, Rgb_Timing *timing);
+int rgb_timing(Test** test, Rgb_Timing* timing);
 
-static Dtest rgb_timing_dtest __attribute__((unused)) = {
-  "RGB Timing Test",
-  "rgb_timing",
-  "\
+static Dtest rgb_timing_dtest __attribute__((unused)) = {"RGB Timing Test",
+                                                         "rgb_timing",
+                                                         "\
 #========================================================================\n\
 #                      RGB Timing Test\n\
 #\n\
@@ -25,10 +24,8 @@ static Dtest rgb_timing_dtest __attribute__((unused)) = {
 # some measure of the relative time taken up generating random numbers\n\
 # for the various generators and tests.\n\
 ",
-  10,        /* Number of psamples (passes) */
-  1000000,   /* Number of samples in inner loop */
-  1,         /* Number of tests */
-  rgb_timing,
-  0
-};
-
+                                                         10,      /* Number of psamples (passes) */
+                                                         1000000, /* Number of samples in inner loop */
+                                                         1,       /* Number of tests */
+                                                         rgb_timing,
+                                                         0};

@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int dab_filltree(Test **test, int irun);
+int dab_filltree(Test** test, int irun);
 
-static Dtest dab_filltree_dtest __attribute__((unused)) = {
-  "DAB Fill Tree Test",
-  "dab_filltree",
-  "\
+static Dtest dab_filltree_dtest
+    __attribute__((unused)) = {"DAB Fill Tree Test", "dab_filltree", "\
 #==================================================================\n\
 #                DAB Fill Tree Test\n\
 # This test fills small binary trees of fixed depth with\n\
@@ -31,11 +29,4 @@ static Dtest dab_filltree_dtest __attribute__((unused)) = {
 #\n\
 # Because of the target data for the first p-value,\n\
 # ntuple must be kept at the default (32).\n\
-#==================================================================\n",
-  1,
-  15000000,
-  2,
-  dab_filltree,
-  0
-};
-
+#==================================================================\n", 1, 15000000, 2, dab_filltree, 0};

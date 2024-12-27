@@ -5,12 +5,9 @@
 /*
  * function prototype
  */
-int diehard_opso(Test **test, int irun);
+int diehard_opso(Test** test, int irun);
 
-static Dtest diehard_opso_dtest __attribute__((unused)) = {
-  "Diehard OPSO",
-  "diehard_opso",
-  "\
+static Dtest diehard_opso_dtest __attribute__((unused)) = {"Diehard OPSO", "diehard_opso", "\
 #==================================================================\n\
 #        Diehard Overlapping Pairs Sparse Occupance (OPSO)\n\
 # The OPSO test considers 2-letter words from an alphabet of    \n\
@@ -27,11 +24,4 @@ static Dtest diehard_opso_dtest __attribute__((unused)) = {
 # signated 10 bits, and so on.                                  \n\
 # \n\
 #  Note 2^21 = 2097152, tsamples cannot be varied.\n\
-#==================================================================\n",
-  100,
-  2097152,
-  1,
-  diehard_opso,
-  0
-};
-
+#==================================================================\n", 100, 2097152, 1, diehard_opso, 0};

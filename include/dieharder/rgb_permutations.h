@@ -5,12 +5,12 @@
 /*
  * function prototype
  */
-int rgb_permutations(Test **test,int irun);
+int rgb_permutations(Test** test, int irun);
 
-static Dtest rgb_permutations_dtest __attribute__((unused)) = {
-  "RGB Permutations Test",
-  "rgb_permutations",
-  "\n\
+static Dtest rgb_permutations_dtest
+    __attribute__((unused)) = {"RGB Permutations Test",
+                               "rgb_permutations",
+                               "\n\
 #========================================================================\n\
 #                       RGB Permutations Test\n\
 # This is a non-overlapping test that simply counts order permutations of\n\
@@ -21,10 +21,8 @@ static Dtest rgb_permutations_dtest __attribute__((unused)) = {
 # tests, which are much more difficult because of the covariance of the\n\
 # overlapping samples.\n\
 #\n",
-  100,     /* Default psamples */
-  100000,  /* Default tsamples */
-  1,       /* We magically make all the bit tests return a single histogram */
-  rgb_permutations,
-  0
-};
-
+                               100,    /* Default psamples */
+                               100000, /* Default tsamples */
+                               1,      /* We magically make all the bit tests return a single histogram */
+                               rgb_permutations,
+                               0};

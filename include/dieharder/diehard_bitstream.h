@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_bitstream(Test **test,int irun);
+int diehard_bitstream(Test** test, int irun);
 
-static Dtest diehard_bitstream_dtest __attribute__((unused)) = {
-  "Diehard Bitstream Test",
-  "diehard_bitstream",
-  "\n\
+static Dtest diehard_bitstream_dtest
+    __attribute__((unused)) = {"Diehard Bitstream Test", "diehard_bitstream", "\n\
 #==================================================================\n\
 #                  Diehard Bitstream Test.\n\
 # The file under test is viewed as a stream of bits. Call them  \n\
@@ -36,11 +34,4 @@ static Dtest diehard_bitstream_dtest __attribute__((unused)) = {
 # independent.  If one uses the non-overlapping version of this\n\
 # test, sigma = 290 is used instead, smaller because now there\n\
 # are 2^21 INDEPENDENT samples.\n\
-#==================================================================\n",
-  100,
-  2097152,
-  1,
-  diehard_bitstream,
-  0
-};
-
+#==================================================================\n", 100, 2097152, 1, diehard_bitstream, 0};

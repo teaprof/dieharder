@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_count_1s_stream(Test **test,int irun);
+int diehard_count_1s_stream(Test** test, int irun);
 
 static Dtest diehard_count_1s_stream_dtest __attribute__((unused)) = {
-  "Diehard Count the 1s (stream) Test",
-  "diehard_count_1s_stream",
-  "\
+    "Diehard Count the 1s (stream) Test", "diehard_count_1s_stream", "\
 #==================================================================\n\
 #          Diehard Count the 1s (stream) (modified) Test.\n\
 # Consider the file under test as a stream of bytes (four per   \n\
@@ -28,11 +26,4 @@ static Dtest diehard_count_1s_stream_dtest __attribute__((unused)) = {
 # the covariance matrix of the cell counts provides a chisquare \n\
 # test::  Q5-Q4, the difference of the naive Pearson sums of    \n\
 # (OBS-EXP)^2/EXP on counts for 5- and 4-letter cell counts.    \n\
-#==================================================================\n",
-  100,
-  256000,
-  1,
-  diehard_count_1s_stream,
-  0
-};
-
+#==================================================================\n", 100, 256000, 1, diehard_count_1s_stream, 0};

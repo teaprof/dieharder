@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int rgb_kstest_test(Test **test,int irun);
+int rgb_kstest_test(Test** test, int irun);
 
-static Dtest rgb_kstest_test_dtest __attribute__((unused)) = {
-  "RGB Kolmogorov-Smirnov Test Test",
-  "rgb_kstest_test",
-  "#\n\
+static Dtest rgb_kstest_test_dtest
+    __attribute__((unused)) = {"RGB Kolmogorov-Smirnov Test Test", "rgb_kstest_test", "#\n\
 #            The Kolmogorov-Smirnov Test Test\n\
 #\n\
 #\n\
@@ -30,11 +28,4 @@ static Dtest rgb_kstest_test_dtest __attribute__((unused)) = {
 # failure for -t 100, -p 10000 or higher.  For -t 1000, it is much more\n\
 # difficult to detect, and the final kstest is approximately valid for the\n\
 # test in question.\n\
-#\n",
-  1000,
-  10000,
-  1,
-  rgb_kstest_test,
-  0
-};
-
+#\n", 1000, 10000, 1, rgb_kstest_test, 0};

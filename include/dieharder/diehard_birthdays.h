@@ -5,12 +5,10 @@
 /*
  * function prototype
  */
-int diehard_birthdays(Test **test, int irun);
+int diehard_birthdays(Test** test, int irun);
 
-static Dtest diehard_birthdays_dtest __attribute__((unused)) = {
-  "Diehard Birthdays Test",
-  "diehard_birthdays",
-  "\n\
+static Dtest diehard_birthdays_dtest
+    __attribute__((unused)) = {"Diehard Birthdays Test", "diehard_birthdays", "\n\
 #==================================================================\n\
 #                Diehard \"Birthdays\" test (modified).\n\
 # Each test determines the number of matching intervals from 512\n\
@@ -31,13 +29,7 @@ static Dtest diehard_birthdays_dtest __attribute__((unused)) = {
 # we want that's less than or equal to rmax_bits = 32.  It can be\n\
 # reset to a new value with -y nbits.  Both default to diehard's\n\
 # values if no -x or -y options are used.\n\
-#==================================================================\n",
-  100,
-  100,
-  1,
-  diehard_birthdays,
-  0
-};
+#==================================================================\n", 100, 100, 1, diehard_birthdays, 0};
 
 /*
  * Global variables
